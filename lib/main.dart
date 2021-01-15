@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +21,11 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter App'),
       ),
-      body: Column(children: <Widget>[
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        // crossAxisAlignment: CrossAxisAlignment.stretch,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
         Container(
           width: double.infinity,
           child: Card(
@@ -32,7 +36,7 @@ class HomePage extends StatelessWidget {
         Card(
           child: Text('List'),
         )
-      ]),
+      ],),
     );
   }
 }
